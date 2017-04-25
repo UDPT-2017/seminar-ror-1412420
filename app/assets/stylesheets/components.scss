@@ -1,0 +1,43 @@
+$primary-color: #ee6123;
+$gray-color: #ddd;
+$white-color: #fff;
+$transparent: transparent;
+$gray-dark: #666;
+
+.m-btn {
+  color: #fff;
+  display: inline-block;
+  padding: 12px 35px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0.15);
+  &:hover {
+    background-color: rgba(255,255,255,0.9);
+  }
+}
+
+.m-btn-white {
+  background-color: rgba(255,255,255,0.9);
+  color: #61b3de;
+}
+
+.m-btn-login {
+  background: $primary-color;
+  color: $white-color;
+}
+
+.input-errors  {
+  font-size: 10px;
+  color: red;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 995px) {
+  .m-btn {
+    padding: 9px 20px;
+  }
+}
