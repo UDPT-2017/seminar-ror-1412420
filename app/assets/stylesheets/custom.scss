@@ -48,6 +48,7 @@ $demi-green: #C1E1F1;
 $gray-1b: #8f989d;
 $gray-1c: #464c50;
 $gray-1d: #f9f9f9;
+$green: green;
 // header
 // header
 .stage {
@@ -157,9 +158,9 @@ $gray-1d: #f9f9f9;
       }
       p.avatar {
         img {
-          margin-top: 5px;
-          width: 40px;
-          height: 40px;
+          margin-top: 2px;
+          width: 45px;
+          height: 45px;
           border-radius: 50%;
         }
       }
@@ -175,7 +176,7 @@ $gray-1d: #f9f9f9;
 
 .stage-sidebar {
   display: none;
-  border: 1px solid green;
+  border: 1px solid $green;
   position: absolute;
   top: 0;
   right: -100%;
@@ -273,6 +274,7 @@ $gray-1d: #f9f9f9;
       margin: 20px auto;
       p {
         &.full-link {
+          overflow: hidden;
           a {
             font-size: 12px;
             color: $gray-dark;
@@ -307,12 +309,10 @@ $gray-1d: #f9f9f9;
   }
   .trending {
     overflow: hidden;
-    border: 1px solid red;
     background: $gray-1d;
     .sidebar-links {
       overflow-y: auto;
       overflow-x: hidden;
-      border: 1px solid red;
       .list-links {
         .link {
           padding: 5px;
@@ -356,7 +356,6 @@ $gray-1d: #f9f9f9;
     }
 
     .charts {
-      border: 1px solid red;
       overflow-y: auto;
       background: $white-color;
       .title-link {
@@ -375,17 +374,39 @@ $gray-1d: #f9f9f9;
         }
       }
       .chart {
-        border: 1px solid red;
         margin-top: 30px;
-        padding-top: 20px;
-        height: 300px;
         width: 100%;
       }
       .linechart {
-
+        border-top: 1px solid $demi-green;
+        .chart-1a-title {
+          height: 45px;
+          p {
+            color: $gray-1b;
+            font-size: 1em;
+            margin-top: 30px;
+            text-transform: uppercase;
+          }
+        }
+        .chart-1a-r {
+          height: 250px;
+          margin-bottom: 30px;
+        }
       }
       .piechart {
-        margin-bottom: 30px;
+        overflow: hidden;
+        margin-bottom: 50px;
+        border-top: 1px solid $demi-green;
+        .pie {
+          margin-top: 30px;
+          .pie-title {
+            color: $gray-1b;
+            text-transform: uppercase;
+          }
+          .pie-r {
+            border-top: 1px solid $gray-color;
+          }
+        }
       }
     }
   }
@@ -456,6 +477,7 @@ $gray-1d: #f9f9f9;
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
+    overflow-y: auto;
   }
   .stage {
     .header {
@@ -476,6 +498,18 @@ $gray-1d: #f9f9f9;
     .contain {
       .short-link-result {
         width: 70%;
+      }
+      .short-link {
+        margin-top: 160px;
+        form {
+          text-align: center;
+          input {
+            padding: 7px 10px;
+          }
+          button {
+            padding: 10px 20px;
+          }
+        }
       }
     }
   }

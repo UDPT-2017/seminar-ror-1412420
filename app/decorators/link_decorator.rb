@@ -8,4 +8,8 @@ class LinkDecorator < Draper::Decorator
   def short_decorator_url
     "#{h.request.host}/#{object.short_link}"
   end
+
+  def full
+    h.truncate(object.full_link, length: 50)
+  end
 end

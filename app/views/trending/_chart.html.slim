@@ -1,0 +1,33 @@
+.title-link
+  time.m-time FEB 23
+  h2 = @link.domain
+  p = @link.decorate.full
+  = link_to @link.decorate.short_decorator_url, @link.decorate.short_url, class: "link-result", target: "_blank", rel:"noopener"
+  button.m-link-result Copy
+.chart.linechart
+  .chart-1a-title
+    p
+      | Total:&nbsp;
+      span = @link.hits_count
+      | &nbsp;clicks
+  .chart-1a-r
+    = line_chart @data_line, width: "100%", height: "100%"
+.chart.linechart
+  .chart-1a-title
+    p
+      | Total:&nbsp;
+      span = @link.hits_count
+      | &nbsp;clicks
+  .chart-1a-r
+    = geo_chart @data_country, width: "100%", height: "100%"
+.chart.piechart
+  .pie.col-md-6
+    .pie-title
+      | ip address
+    .pie-r
+      = pie_chart @data_ip, width: "100%", height: "300px"
+  .pie.col-md-6
+    .pie-title
+      | location
+    .pie-r
+      = pie_chart @data_country, width: "100%", height: "300px"

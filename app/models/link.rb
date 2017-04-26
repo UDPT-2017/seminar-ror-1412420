@@ -4,4 +4,7 @@ class Link < ApplicationRecord
   validates :full_link, :short_link, presence: true
   validates :short_link, uniqueness: true
   validates :full_link, url: true
+
+  default_scope -> { order(created_at: :desc) }
+
 end

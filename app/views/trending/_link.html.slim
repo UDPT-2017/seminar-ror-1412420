@@ -1,0 +1,9 @@
+= link_to trending_path(link), class: 'link-c'
+  div class=("link row #{'m-link-active' if @id == link.id }")
+    label
+      input name="" type="checkbox" /
+    span = link.hits_count || 0
+    div
+      time.m-time Feb 23
+      h4 = link.domain
+      p = link.decorate.short_decorator_url

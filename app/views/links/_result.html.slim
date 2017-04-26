@@ -1,6 +1,6 @@
-p.result-notice =truncate(@link.domain, length: 80)
+p.result-notice = @link.decorate.full
 p.full-link
-  = link_to truncate(@link.full_link, length: 80), @link.full_link
+  = link_to @link.decorate.full, @link.full_link
 p
   = link_to @link.decorate.short_decorator_url, @link.decorate.short_url, class: 'link-result', target: '_blank', rel: 'noopener'
   button.m-link-result Copy
