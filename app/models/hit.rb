@@ -8,4 +8,18 @@ class Hit < ApplicationRecord
   def address
     ip_address
   end
+
+  class << self
+    def group_by_date_within_days(days)
+      where("date(created_at) >= date(?)",days.days.ago).group("date(created_at)").count
+    end
+
+    def group_by_location
+      group(:location).count
+    end
+
+    def group_by_ip
+      group(:ip_address).count
+    end
+  end
 end
