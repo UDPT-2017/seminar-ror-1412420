@@ -30,11 +30,18 @@ document.addEventListener("turbolinks:load", function() {
     var height = display[1];
     console.log(width + 'x' + height);
     $("body").css({"width":width + "px", "height": height + "px"});
+    return height;
   }
-  initDisplay();
+
+  function initDisplayInput() {
+    var h = initDisplay();
+    $(".short-link").css("margin-top", (h / 2 - 125) + "px");
+  }
+
+  initDisplayInput();
 
   $(window).resize(function(){
-    initDisplay();
+    initDisplayInput();
   });
 })
 
@@ -54,5 +61,15 @@ $(document).ready(function(){
       sidebar.css("height", $(window).outerHeight());
     }
   });
-
+  // prevent submit link
+  $("#shorten").submit(function(e){
+    if(!$("#shorten-link").val()) {
+      e.preventDefault();
+    }
+  });
+  $("#shorten-submit").click(function(e){
+    if(!$("#shorten-link").val()) {
+      e.preventDefault();
+    }
+  });
 });

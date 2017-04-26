@@ -1,0 +1,6 @@
+p.result-notice =truncate(@link.domain, length: 80)
+p.full-link
+  a href="#{@link.full_link}" =truncate(@link.full_link, length: 80)
+p
+  a.link-result href="#{@link.decorate.short_url}"  = @link.decorate.short_decorator_url
+  button.copy Copy

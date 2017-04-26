@@ -6,7 +6,7 @@ header.header
           | Shorten.me
       span#toggle-menu
         i.fa.fa-bars aria-hidden="true"
-    .col-md-6.col-sm-5.menu-top
+    .col-md-7.col-sm-5.menu-top
       ul
         li
           a href=""  Short link
@@ -14,7 +14,7 @@ header.header
           a href=""  Analyze
         li
           a href="#"  Trending
-    .col-md-4.col-sm-4.register
+    .col-md-3.col-sm-4.register
       - unless user_signed_in?
         = link_to "Login", new_user_session_path, class: "m-btn"
         = link_to "Signup", new_user_registration_path, class: "m-btn m-btn-white btn-login"
