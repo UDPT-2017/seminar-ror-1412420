@@ -136,17 +136,22 @@ $gray-dark: #666;
         float: left;
         text-align: center;
         a {
-          color: $primary-color;
+          color: $white-color;
           display: block;
           &.logout {
             color: $gray-color;
+            font-size: 12px;
           }
+        }
+        &.info-user {
+          margin-top: 2px;
         }
       }
       p.avatar {
         img {
-          width: 50px;
-          height: 50px;
+          margin-top: 5px;
+          width: 40px;
+          height: 40px;
           border-radius: 50%;
         }
       }
@@ -168,7 +173,7 @@ $gray-dark: #666;
   right: -100%;
   width: 80%;
   overflow-y: scroll;
-  background: red;
+  background: #4b4c4d;
   -webkit-transition: right .25s ease;
      -moz-transition: right .25s ease;
       -ms-transition: right .25s ease;
@@ -181,8 +186,18 @@ $gray-dark: #666;
       li {
         a {
           display: block;
-          border: 1px solid;
+          border-bottom: 1px solid #666;
+          border-left: 3px solid $transparent;
+          -webkit-transition: all .25s ease;
+             -moz-transition: all .25s ease;
+              -ms-transition: all .25s ease;
+               -o-transition: all .25s ease;
+                  transition: all .25s ease;
+          color: #fff;
           padding: 15px 20px;
+          &:hover {
+            border-left: 3px solid $white-color;
+          }
         }
       }
     }
@@ -307,7 +322,6 @@ $gray-dark: #666;
           float: left;
           text-align: center;
           a {
-            color: $primary-color;
             display: block;
             &.logout {
               color: $gray-color;

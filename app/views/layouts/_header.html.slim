@@ -19,7 +19,7 @@ header.header
         = link_to "Login", new_user_session_path, class: "m-btn"
         = link_to "Signup", new_user_registration_path, class: "m-btn m-btn-white btn-login"
       - else
-        p
+        p.info-user
           a.username href="#"
             | #{current_user.name}
           = link_to '(Logout)', destroy_user_session_path, method: :delete, class: "logout"
