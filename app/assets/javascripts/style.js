@@ -30,6 +30,9 @@ document.addEventListener("turbolinks:load", function() {
     var height = display[1];
     console.log(width + 'x' + height);
     $("body").css({"width":width + "px", "height": height + "px"});
+    var hHeight = height - $(".header").outerHeight();
+    $(".sidebar-links").css("height", hHeight + "px");
+    $(".charts").css("height", hHeight + "px");
     return height;
   }
 
@@ -51,11 +54,12 @@ $(document).ready(function(){
   $("#toggle-menu").click(function(e){
     stage = $(".stage");
     sidebar = $(".stage-sidebar");
-    $("body").css("overflow-y", "hidden");
     if(stage.hasClass("open")) {
+      $("body").css("overflow-y", "scroll");
       stage.removeClass("open");
       sidebar.removeClass("sidebar-open");
     } else {
+      $("body").css("overflow-y", "scroll");
       stage.addClass("open");
       sidebar.addClass("sidebar-open");
       sidebar.css("height", $(window).outerHeight());

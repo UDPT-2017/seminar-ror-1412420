@@ -9,11 +9,11 @@ header.header
     .col-md-7.col-sm-5.menu-top
       ul
         li
-          a href=""  Short link
+          = link_to "Short link", root_path
         li
-          a href=""  Analyze
+          = link_to "Analyze", root_path
         li
-          a href="#"  Trending
+          = link_to "Trending", trending_index_path
     .col-md-3.col-sm-4.register
       - unless user_signed_in?
         = link_to "Login", new_user_session_path, class: "m-btn"

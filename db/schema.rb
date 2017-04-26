@@ -16,9 +16,11 @@ ActiveRecord::Schema.define(version: 20170426030902) do
   enable_extension "plpgsql"
 
   create_table "hits", force: :cascade do |t|
-    t.string   "ip_address", null: false
-    t.string   "location",   null: false
+    t.string   "ip_address"
+    t.string   "location"
     t.integer  "link_id"
+    t.float    "latitude"
+    t.float    "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["link_id"], name: "index_hits_on_link_id", using: :btree
