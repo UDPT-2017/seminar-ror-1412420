@@ -20,6 +20,7 @@ button {
 
 body {
   position: relative;
+  overflow: hidden;
   // border: 1px solid red !important;
 }
 
@@ -44,6 +45,10 @@ $gray-dark: #666;
 $demi-rose: #f2dede;
 $demi-rose-1a: #ebccd1;
 $demi-green: #C1E1F1;
+$gray-1b: #8f989d;
+$gray-1c: #464c50;
+$gray-1d: #f9f9f9;
+// header
 // header
 .stage {
   background-image: image-url("bg.png");
@@ -267,23 +272,6 @@ $demi-green: #C1E1F1;
       width: 50%;
       margin: 20px auto;
       p {
-        a {
-          color: $primary-color;
-        }
-        button {
-          font-size: 10px;
-          padding: 5px 10px;
-          margin-left: 10px;
-          text-transform: uppercase;
-          border: 1px solid $primary-color;
-          color: $primary-color;
-          background: $transparent;
-          border-radius: 3px;
-          &:hover {
-            color: $white-color;
-            background: $primary-color;
-          }
-        }
         &.full-link {
           a {
             font-size: 12px;
@@ -314,6 +302,90 @@ $demi-green: #C1E1F1;
     form {
       input {
         @include input-color;
+      }
+    }
+  }
+  .trending {
+    overflow: hidden;
+    border: 1px solid red;
+    background: $gray-1d;
+    .sidebar-links {
+      overflow-y: auto;
+      overflow-x: hidden;
+      border: 1px solid red;
+      .list-links {
+        .link {
+          padding: 5px;
+          position: relative;
+          border-bottom: 1px solid #dde0e2;
+          label {
+            position: absolute;
+            left: 15px;
+            top: 40%;
+            border: 1px solid $gray-1b;
+            border-radius: 3px;
+            width: 20px;
+            height: 20px;
+            background-color: $white-color;
+            font-size: 1.5em;
+            input[type=checkbox] {
+              display: none;
+            }
+          }
+          span {
+            position: absolute;
+            color: $gray-1b;
+            bottom: 5px;
+            right: 20px;
+            &:after {
+              content: "hits";
+              margin-left: 5px;
+            }
+          }
+          div {
+            margin-left: 55px;
+            h4 {
+              color: $gray-1c;
+            }
+            p {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+
+    .charts {
+      border: 1px solid red;
+      overflow-y: auto;
+      background: $white-color;
+      .title-link {
+        margin-top: 20px;
+        h2 {
+          margin-top: 7px;
+          margin-bottom: 3px;
+          font-size: 1.6em;
+          color: $gray-1c;
+        }
+        p {
+          color: $gray-1b;
+          &.short-link-chart {
+            color: $primary-color;
+          }
+        }
+      }
+      .chart {
+        border: 1px solid red;
+        margin-top: 30px;
+        padding-top: 20px;
+        height: 300px;
+        width: 100%;
+      }
+      .linechart {
+
+      }
+      .piechart {
+        margin-bottom: 30px;
       }
     }
   }

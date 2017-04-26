@@ -36,6 +36,40 @@ $gray-dark: #666;
   margin-left: 10px;
 }
 
+a.link-result {
+  color: $primary-color;
+}
+
+.m-link-result {
+  font-size: 10px;
+  padding: 4px 8px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  background: $transparent;
+  border-radius: 3px;
+  &:hover {
+    color: $white-color;
+    background: $primary-color;
+  }
+}
+
+.m-time {
+  color: #8f989d !important;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+
+.m-bg {
+  background-image: image-url("bg.png");
+}
+
+.m-link-active {
+  background: $white-color;
+}
+
 @media screen and (max-width: 995px) {
   .m-btn {
     padding: 9px 20px;
