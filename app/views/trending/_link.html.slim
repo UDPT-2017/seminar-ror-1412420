@@ -4,6 +4,6 @@
       input name="" type="checkbox" /
     span = link.hits_count || 0
     div
-      time.m-time Feb 23
+      time.m-time = link.decorate.created
       h4 = link.domain
       p = link.decorate.short_decorator_url

@@ -2,7 +2,7 @@ class TrendingController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    if(current_user.links_count.positive?)
+    if(current_user.links_count&.positive?)
       @links = current_user.links
       @link = @links.first
       @id = @link.id

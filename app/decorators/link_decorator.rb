@@ -12,4 +12,8 @@ class LinkDecorator < Draper::Decorator
   def full
     h.truncate(object.full_link, length: 50)
   end
+
+  def created
+    object.created_at.strftime("%b, %d")
+  end
 end

@@ -1,5 +1,5 @@
 .title-link
-  time.m-time FEB 23
+  time.m-time =@link.decorate.created
   h2 = @link.domain
   p = @link.decorate.full
   = link_to @link.decorate.short_decorator_url, @link.decorate.short_url, class: "link-result", target: "_blank", rel:"noopener"

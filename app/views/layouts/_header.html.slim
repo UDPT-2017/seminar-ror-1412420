@@ -21,7 +21,7 @@ header.header
       - else
         p.info-user
           a.username href="#"
-            | #{current_user.name}
+            | #{ truncate(current_user.name, length: 6) }
           = link_to '(Logout)', destroy_user_session_path, method: :delete, class: "logout"
         p.avatar
           = gravatar_image_tag(current_user.email.gsub('spam', 'mdeering'), alt: current_user.name)
