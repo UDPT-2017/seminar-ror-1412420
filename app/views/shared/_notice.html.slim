@@ -1,0 +1,15 @@
+- if notice || alert
+  #m-notice
+    p.m-notice =notice
+    p.m-alert =alert
+    span.close-notice X
+  javascript:
+    var notice = $("#m-notice");
+    notice.show();
+    setTimeout(function(e) {
+     notice.hide();
+    },2000);
+    $("span.close-notice").click(function(e){
+      notice.hide();
+    });
+

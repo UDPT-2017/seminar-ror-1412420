@@ -15,8 +15,7 @@ html
     link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" /
   meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" /
   body
-    / p.m-notice =notice
-    / p.m-alert =alert
+    = render "shared/notice"
     .stage
       = render partial: "layouts/header"
       .main
