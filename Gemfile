@@ -42,7 +42,8 @@ gem 'gravatar_image_tag'
 gem 'valid_url'
 gem 'draper', '3.0.0.pre1'
 gem 'geocoder'
-gem "chartkick"
+gem 'chartkick'
+gem 'http'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

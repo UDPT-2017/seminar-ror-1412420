@@ -22,11 +22,12 @@ end
 
 20.times do |n|
   Link.create({
-      full_link: Faker::Internet.url,
-      short_link: SecureRandom.urlsafe_base64(5),
+      full_link: 'https://www.google.com',
+      short_link: SecureRandom.urlsafe_base64(4),
       domain: Faker::Internet.domain_name,
       user_id: 1,
-      created_at: Faker::Time.between(30.days.ago, Date.today, :all)
+      created_at: Faker::Time.between(30.days.ago, Date.today, :all),
+      link_type: 0
     })
 end
 

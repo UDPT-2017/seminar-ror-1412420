@@ -1,0 +1,3 @@
+= form_for @link, url: revert_index_path, html: { id: 'shorten' }, remote: true do |f|
+  = f.text_field :short_link, id:"shorten-link"
+  = f.button 'Convert', id: 'shorten-submit'

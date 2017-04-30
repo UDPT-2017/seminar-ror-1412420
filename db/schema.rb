@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 20170426030902) do
     t.string   "short_link", null: false
     t.string   "domain"
     t.integer  "hits_count"
+    t.integer  "link_type"
+    t.integer  "integer"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

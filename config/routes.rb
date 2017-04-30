@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :links
+  resources :links, only: [:new, :create]
+  resources :revert, only: [:index, :create]
   resources :trending, only: [:index, :show]
   root to: "links#new"
 

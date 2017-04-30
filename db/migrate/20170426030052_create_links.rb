@@ -5,6 +5,7 @@ class CreateLinks < ActiveRecord::Migration[5.0]
       t.string :short_link, null: false
       t.string :domain
       t.integer :hits_count
+      t.integer :link_type, :integer, defalt: 0
       t.belongs_to :user, foreign_key: true, null: true
       t.timestamps
     end
