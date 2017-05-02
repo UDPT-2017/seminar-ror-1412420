@@ -1,0 +1,4 @@
+p.result-notice = @link.short_link
+p
+  = link_to @link.decorate.full, @link.full_link, class: 'link-result', target: '_blank', rel: 'noopener', title: @link.full_link
+  button.m-link-result Copy

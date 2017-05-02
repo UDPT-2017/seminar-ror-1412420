@@ -40,3 +40,14 @@ html
           sidebar.css("height", $(window).outerHeight());
         }
       });
+
+      $("#shorten-submit").click(function(e){
+        if(!$("#shorten-link").val()) {
+          e.preventDefault();
+        } else {
+          r = document.getElementsByClassName('short-link-result')[0];
+          r.innerHTML = '';
+          r.classList.add('loading');
+        }
+      });
+

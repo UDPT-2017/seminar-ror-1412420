@@ -47,21 +47,5 @@ document.addEventListener("turbolinks:load", function() {
     initDisplayInput();
   });
 
-})
-
-
-$(document).ready(function(){
-
-  // prevent submit link
-  $("#shorten").submit(function(e){
-    if(!$("#shorten-link").val()) {
-      e.preventDefault();
-    }
-  });
-  $("#shorten-submit").click(function(e){
-    if(!$("#shorten-link").val()) {
-      e.preventDefault();
-    }
-  });
-
 });
+
