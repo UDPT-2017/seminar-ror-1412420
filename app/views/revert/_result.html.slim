@@ -1,4 +1,6 @@
 p.result-notice = @link.short_link
 p
-  = link_to @link.decorate.full, @link.full_link, class: 'link-result', target: '_blank', rel: 'noopener', title: @link.full_link
-  button.m-link-result Copy
+  = link_to @link.decorate.full, @link.full_link, class: 'link-result', id: 'cpy', target: '_blank', rel: 'noopener', title: @link.full_link
+
+  button.m-link-result.clipboard-btn data-clipboard-text= @link.full_link
+    | Copy

@@ -12,17 +12,6 @@
         = f.label :remember_me do
           = f.check_box :remember_me
           | Remember me
+      .form-group
       = f.button "Log in", class: "btn m-btn-login"
   = render "devise/shared/links"
-
-/ .login
-/   form
-/     .form-group
-/       label for="email"  Email address:
-/       input#email.form-control type="email" /
-/       span.input-errors ERR
-/     .form-group
-/       label for="pwd"  Password:
-/       input#pwd.form-control type="password" /
-/       span.input-errors ERR
-/     button.btn.m-btn-login type="submit"  Submit

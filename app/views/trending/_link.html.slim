@@ -1,4 +1,4 @@
-= link_to trending_path(link), class: 'link-c'
+= link_to trending_path(link), class: 'link-c',id: "scroll#{link.id}", data: { turbolinks: false }
   div class=("link row #{'m-link-active' if @id == link.id }")
     label
       input name="" type="checkbox" /

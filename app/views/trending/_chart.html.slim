@@ -3,7 +3,8 @@
   h2 = @link.domain
   p = @link.decorate.full
   = link_to @link.decorate.short_decorator_url, @link.decorate.short_url, class: "link-result", target: "_blank", rel:"noopener"
-  button.m-link-result Copy
+  button.m-link-result.clipboard-btn data-clipboard-text= @link.decorate.short_url
+    | Copy
 .chart.linechart
   .chart-1a-title
     p

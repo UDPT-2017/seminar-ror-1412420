@@ -9,3 +9,8 @@
   javascript:
     $(".header").addClass("m-bg");
     $(".stage").css("background", "#fff");
+
+    console.log(top);
+    $('.sidebar-links').animate({
+        scrollTop: $("#scroll#{@link.id}").offset().top - $('.header').height()
+    }, 1000);
