@@ -1,7 +1,7 @@
 header.header
   .container
     .col-md-2.col-sm-3.logo
-      = link_to root_path do
+      = link_to root_path, data: { turbolinks: false } do
         span
           | Shorten.me
       span#toggle-menu
@@ -9,11 +9,11 @@ header.header
     .col-md-7.col-sm-5.menu-top
       ul
         li
-          = link_to "Short link", root_path
+          = link_to "Short link", root_path, class: "#{'m-hactive' if controller_name == 'links'}", data: { turbolinks: false }
         li
-          = link_to "Analyze", revert_index_path
+          = link_to "Analyze", revert_index_path, class: "#{'m-hactive' if controller_name == 'revert'}", data: { turbolinks: false }
         li
-          = link_to "Trending", trending_index_path
+          = link_to "Trending", trending_index_path, class: "#{'m-hactive' if controller_name == 'trending'}", data: { turbolinks: false }
     .col-md-3.col-sm-4.register
       - unless user_signed_in?
         = link_to "Login", new_user_session_path, class: "m-btn"

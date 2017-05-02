@@ -71,6 +71,14 @@ $gray-dark: #666;
   background: $white-color;
 }
 
+.m-hactive {
+  border-top: 3px solid $white-color !important;
+}
+
+// .text-cpy {
+//   display: none !important;
+// }
+
 @media screen and (max-width: 995px) {
   .m-btn {
     padding: 9px 20px;

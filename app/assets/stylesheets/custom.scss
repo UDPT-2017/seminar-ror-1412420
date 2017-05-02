@@ -309,7 +309,7 @@ $green: green;
     }
   }
   .signup {
-    margin: 50px auto;
+    margin: 40px auto;
     @include register-login();
     form {
       input {
@@ -525,5 +525,12 @@ $green: green;
   }
   .stage-sidebar {
     display: block;
+  }
+}
+
+
+#error_explanation {
+  h2 {
+    display: none;
   }
 }

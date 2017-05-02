@@ -44,6 +44,7 @@ gem 'draper', '3.0.0.pre1'
 gem 'geocoder'
 gem 'chartkick'
 gem 'http'
+gem 'clipboard-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
