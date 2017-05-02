@@ -3,7 +3,7 @@ class TrendingController < ApplicationController
 
   def index
     if(current_user.links_count&.positive?)
-      @links = current_user.links
+      prepare_links
       @link = @links.first
       @id = @link.id
       get_info_chart(@link)
@@ -13,7 +13,7 @@ class TrendingController < ApplicationController
   end
 
   def show
-    @links = current_user.links
+    prepare_links
     @link = @links.find(params[:id])
     @id = @link.id
     get_info_chart(@link)
@@ -26,5 +26,9 @@ class TrendingController < ApplicationController
     @data_line = link.hits.group_by_date_within_days(30)
     @data_country = link.hits.group_by_location
     @data_ip = link.hits.group_by_ip
+  end
+
+  def prepare_links
+    @links = current_user.links
   end
 end

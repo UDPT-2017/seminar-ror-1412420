@@ -1,6 +1,6 @@
 class ShortenController < ApplicationController
   def index
-    if @link = Link.find_by!(short_link: params[:id])
+    if @link = Link.find_by(short_link: params[:id])
       tracking
       @link.hits.create({ ip_address: @ip, location: @location })
       redirect_to @link.full_link and return

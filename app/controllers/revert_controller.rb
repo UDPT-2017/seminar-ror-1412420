@@ -10,7 +10,7 @@ class RevertController < ApplicationController
     while true
       break if get_location(full_link) == 0
       if get_location(full_link) == -1
-        flash[:alert] = "`#{short_link}` is not a  link"
+        flash[:alert] = "`#{short_link}` is not a link"
         redirect_to revert_index_path and return
       else
         full_link = get_location(full_link)
@@ -18,7 +18,7 @@ class RevertController < ApplicationController
     end
 
     if short_link == full_link
-      flash[:alert] = "`#{short_link}` is not a short_link link"
+      flash[:alert] = "`#{short_link}` is not a short link"
       redirect_to revert_index_path and return
     else
       domain = Addressable::URI.parse(full_link).host
