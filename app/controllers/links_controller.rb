@@ -14,7 +14,6 @@ class LinksController < ApplicationController
       domain = Addressable::URI.parse(full_link).host
       @link = current_user.links.build({ full_link: full_link, short_link: short, domain: domain, link_type: 0 })
       unless @link.save
-        p @link.errors.messages
         flash[:alert] = "`#{full_link}` is not a url"
         redirect_to root_path and return
       end
