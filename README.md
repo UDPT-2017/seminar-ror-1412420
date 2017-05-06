@@ -1,12 +1,11 @@
-# Seminar-UDPT - *Tên đề tài*
-
-**Tên đề tài** là một repository trong đề tài tìm hiểu của lớp Ứng dụng phân tán.
+# Seminar-UDPT - *seminar-ror-1412420*
 
 Thành viên:
-* [ ] **MSSV1** Tên sinh viên 1 (tên tài khoản github)
-* [ ] **MSSV2** Tên sinh viên 2 (tên tài khoản github)
+* [x] **1412420** Phan Hữu Phước ([Tài khoản github](https://github.com/Huuphuoc19))
 
-URL: **Link github page**
+URL: [Link github page](https://udpt-2017.github.io/seminar-ror-1412420/index.md)
+
+URL: [SLIDE THUYẾT TRÌNH](http://prezi.com/mhnnq6vilxpf/?utm_campaign=share&utm_medium=copy&rc=ex0share)
 
 ## Yêu cầu
 
@@ -15,23 +14,38 @@ Sinh viên check vào các mục bên dưới và ghi mã sinh viên đã làm v
 Yêu cầu **GIT**
 * [ ] Có sử dụng GIT.
 * [ ] Sử dụng GIT theo Centralized Workflow.
-* [ ] Sử dụng GIT theo Feature Branch Workflow.
+* [x] Sử dụng GIT theo Feature Branch Workflow.
 * [ ] Sử dụng GIT theo Gitflow Workflow.
 
 Yêu cầu **bắt buộc**
-* [ ] Source code demo
-* [ ] Slide thuyết trình
-* [ ] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
+* [x] Source code demo
+* [x] Slide thuyết trình
+* [x] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
 
 Các **nội dung lý thuyết** dự định tìm hiểu. Nhóm liệt kê các nội dung đã làm được vào bên dưới và check vào các nội dung đã tìm hiểu được.
-* [ ] Nội dung 1
-* [ ] Nội dung 2
+* [x] Active Record
+* [x] Migration
+* [x] Routing from outside rails
+* [x] Use of some gem:
+    * devise
+    * slim-rails
+    * pg
+    * factory_girl_rails
+    * faker
+    * gravatar_image_tag
+    * valid_url
+    * draper
+    * geocoder
+    * chartkick
+    * http
+    * clipboard-rails
 
 Các **chức năng của demo** đã thực hiện hoặc dự kiến thực hiện. Nhóm check vào các chức năng đã làm
-* [ ] Chức năng 1
-* [ ] Chức năng 2
+* [x] Making short link
+* [x] Convert a arbitrary shortlink to original link
+* [x] Analyze trending of shortlink
 
-## Demo
+#### URL: [Demo on Heroku](https://cryptic-temple-95973.herokuapp.com/)
 
 Link ảnh GIF demo ứng dụng:
 
@@ -42,7 +56,7 @@ Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2017] [Austin]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
