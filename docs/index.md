@@ -78,7 +78,7 @@
 #### 2.4 Generate model - migration
 
 ##### Generate model sau với các trường như trong hình sau
-![ERD Diagram](../app/assets/images/erd.png?raw=true)
+![ERD Diagram](https://res.cloudinary.com/austinphan/image/upload/v1494064767/erd_pyyhrf.png)
 * Với model user ta sử dụng generate của devise
  `rails generate devise user`
 * Chạy `rake db:migrate` để tạo  bảng
