@@ -49,7 +49,7 @@ Các **chức năng của demo** đã thực hiện hoặc dự kiến thực hi
 
 Link ảnh GIF demo ứng dụng:
 
-![Video Walkthrough](https://res.cloudinary.com/austinphan/image/upload/v1494084631/demo-seminar_jzuzni.gif)
+![Video Walkthrough](https://cloud.githubusercontent.com/assets/16222786/25777402/4fd4dc50-3306-11e7-8da3-bffe5a02706c.gif)
 
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
