@@ -3,9 +3,9 @@
 Thành viên:
 * [x] **1412420** Phan Hữu Phước ([Tài khoản github](https://github.com/Huuphuoc19))
 
-URL: [Link github page](https://udpt-2017.github.io/seminar-ror-1412420/index.md)
+URL: [Link github page](https://udpt-2017.github.io/seminar-ror-1412420/)
 
-URL: [SLIDE THUYẾT TRÌNH](http://prezi.com/mhnnq6vilxpf/?utm_campaign=share&utm_medium=copy&rc=ex0share)
+URL: [Slide thuyết trình](http://prezi.com/mhnnq6vilxpf/?utm_campaign=share&utm_medium=copy&rc=ex0share)
 
 ## Yêu cầu
 
@@ -49,7 +49,7 @@ Các **chức năng của demo** đã thực hiện hoặc dự kiến thực hi
 
 Link ảnh GIF demo ứng dụng:
 
-![Video Walkthrough](demo.gif)
+![Video Walkthrough](https://res.cloudinary.com/austinphan/image/upload/v1494084631/demo-seminar_jzuzni.gif)
 
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
